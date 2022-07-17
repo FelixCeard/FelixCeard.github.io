@@ -1,6 +1,2 @@
-# Things to say
-
-- Topics that I find interesting in AI
-- What I think AI should be
-- What my hobbies are
-- 
+# Portfolio 
+I created this site in less than two days during exam phase. Please acknowledge that while you look at my code and lose hope in humanity.
