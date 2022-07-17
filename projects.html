@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="projects.css">
+    <!--    <script src="courses.js">-->
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,500&display=swap"-->
+    <!--          rel="stylesheet">-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+
+<!-- BODY START -->
+<div id="main_page">
+    <header>
+        <div id="title_logo">
+            <span class="title_text">
+                <a href="index.html" class="link_text">Felix CF</a>
+            </span>
+        </div>
+        <div class="header_texts_container">
+            <a href="me.html">
+                <span class="link_header title_text">About me</span>
+            </a>
+            <a href="#">
+                <span class="link_header title_text">Projects</span>
+            </a>
+            <a href="#">
+                <span class="link_header title_text">CV</span>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="third_section">
+        <span class="section_title">Projects</span>
+
+        <div class="projects">
+            <div class="more">
+                <a href="projects.html" class="button_a">
+                    <button class="more_about_me">GitHub Profile</button>
+                </a>
+            </div>
+
+            <div class="project">
+                <img src="images/ebmaj7.png">
+                <div>
+                    <span>Programming language</span>
+
+                    <p>
+                        I created my own esoteric programming language called Eb-maj7.
+                        <br>
+                        <br>
+                        The goal of this programming language was to be able to write functional code and during the
+                        execution, music would have been created.
+                        <br>
+                        <br>
+                        The syntax is very weird as I have (rather had) the plan of converting the execution code to a
+                        MIDI file at execution time which would have enabled the user to listen to their program.
+                        <br>
+                        <br>
+                        In the end, I (only) programmed an interpreter in python (python 3.10s match statements omg soo
+                        good!) which is able to execute the syntax as it should.
+                        <br>
+                        Even though the syntax is weird, I find it quite interesting as for example, my programming
+                        language has only two variables, which is a direct analogy with pianists, who only have two
+                        hands to play.
+                        <br>
+                        The picture gives an accurate representation how it feels to program with this language.
+                        <br>
+                        <br>
+                        You can find the code here: <a href="https://github.com/FelixCeard/Eb-maj7">GitHub</a>.
+
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/nn.png">
+                <div>
+                    <span>Neural Network framework</span>
+
+                    <p>
+                        Having learned functional programming languages in programming one, I wanted to see the limits
+                        of this kind of languages, and I challenged myself to create of framework for the training of
+                        neural networks.
+                        <br>
+                        <br>
+                        Because we used an unpopular programming language (SML), it meant that there was no ground
+                        truth, so technically I would be the first one to implement gradient descent in this programming
+                        language. Note that everything in this "library" is implemented from scratch, including matrix
+                        multiplication etc...
+                        <br>
+                        <br>
+                        My framework is able to train a neural network of any desired size but only consisting of fully
+                        connected layers, Relu
+                        and sigmoid activation functions.
+                        <br>
+                        <br>
+                        You can find the code here: <a href="https://github.com/FelixCeard/SML-AI">GitHub</a>.
+
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/transform.png">
+                <div>
+                    <span>Transformer</span>
+
+                    <p>
+                        For the course <a href="https://cms.sic.saarland/hlcvss22/">High Level Computer Vision</a>, I am
+                        doing a project involving training a large transformer from scratch.
+                        <br>
+                        <br>
+                        The goal of the project is to recreate pictures of objects solely on their sketches. Even though
+                        this task is not novel, we used the VQ-GAN architecture to introduce a novel approach to this
+                        domain.
+                        <br>
+                        The advantage of using a transformer instead of a "classic" GAN is that, in theory, it would be
+                        able to not only recreate the images based on their sketches, but also to create the sketches
+                        from the images. I believe, that with enough data and a bigger transformer, this transformer
+                        could excel in both (sub-)tasks.
+                        <br>
+                        <br>
+                        For our dataset, we used a dataset of <a
+                            href="https://amazon-berkeley-objects.s3.amazonaws.com/index.html"> 400 thousand amazon
+                        product images</a> that we converted with a <a href="https://mtli.github.io/sketch/">second
+                        AI</a> to sketches.
+                        <br>
+                        I used a pretrained VQ-VAE (as described <a
+                            href="https://github.com/CompVis/taming-transformers">here</a>) which is able to correctly
+                        encode and decode both our images and sketches.
+                        I Therefore "just" have to train a Transformer, the architecture I am using has 27 millions
+                        parameter.
+                        <br>
+                        To train this model, it takes around 7-8 hours per epoch. A detailed version of the training can
+                        be found in this report: <a
+                            href="https://wandb.ai/hlcv22/[REAL]transformer/reports/VQ-VAE-training--VmlldzoyMzI3Nzk2?accessToken=pa5v0fny839fm6yqjuhqbpm1rbc585uq4h7o9t18gmtn1j3x5g48f2i40x8ign6o">Live
+                        report</a>
+                        <br>
+                        Note that this is still work in progress.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/game.png">
+                <div>
+                    <span>Game of Real</span>
+
+                    <p>
+                        I stumbled (somewhat on accident) on a version of <a href="">Game of Life</a> that is in the
+                        continuous domain (this <a href="https://www.youtube.com/watch?v=8wDSQxmAyTw&t=361s">YouTube
+                        video</a> may help understand what this is all about).
+                        <br>
+                        <br>
+                        I saw a project on YouTube where someone applied reinforcement learning on the original Game of
+                        Life, in order to discover new <a
+                            href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns">patterns</a>.
+                        <br>
+                        My goal was to recreate this project, but instead of using a discrete space, I would like to use
+                        the continuous domain.
+                        <br>
+                        <br>
+                        As this is computationally intensive (O(n^2)), I wanted to optimize the simulation to run on my
+                        GPU.
+                        <br>
+                        In the end, I improved the performance from 30s per frame to around 60-70 frames per seconds.
+                        <br>
+                        <br>
+                        As always, the code can be found here: <a href="https://github.com/FelixCeard/GameOfRealGPU">Github</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/gravity.gif">
+                <div>
+                    <span>Gravity simulation</span>
+
+                    <p>
+                        I create a simulation for the (famous) "n-body problem", which simply states that the gravity
+                        between multiple objects (planets) cannot be computed analytically (or fast, sth. along those
+                        line).
+                        <br>
+                        <br>
+                        This naive approach is an approximation of this problem. Unlike the stated problem, I did not
+                        focus on the problem itself, but rather on the artistic style of the simulation, as it is very
+                        satisfying to see how these planets behave.
+                        <br>
+                        <br>
+                        Code: <a href="https://github.com/FelixCeard/planet-gravity-smulation">GitHub</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/scrape.png">
+                <div>
+                    <span>Image scrapper</span>
+
+                    <p>
+                        It is noteworthy that I implemented an image scrapper a few years ago, nothing fancy, it just
+                        work(ed) (haven't checked since then).
+                        <br>
+                        <br>
+                        Code: <a href="https://github.com/FelixCeard/Pixabay_scraper">GitHub</a>.
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+
+        </div>
+    </div>
+
+
+    <div class="more">
+        <a href="projects.html" class="button_a">
+            <button class="more_about_me">GitHub Profile</button>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+
+<!-- BODY END -->
+</body>
+</html>

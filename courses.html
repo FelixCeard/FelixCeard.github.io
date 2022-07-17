@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="courses.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <script src="courses.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+
+<!-- BODY START -->
+<div id="main_page">
+    <header>
+        <div id="title_logo">
+            <span class="title_text">
+                <a href="index.html" class="link_text">Felix CF</a>
+            </span>
+        </div>
+        <div class="header_texts_container">
+            <a href="me.html">
+                <span class="link_header title_text">About me</span>
+            </a>
+            <a href="#">
+                <span class="link_header title_text">Projects</span>
+            </a>
+            <a href="#">
+                <span class="link_header title_text">CV</span>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="first_section">
+
+        <div class="left">
+
+            <div class="same_size_welcome">
+                <span class="name">Courses</span>
+                <div class="Studienplan">
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Semester</th>
+                            <th><br></th>
+                            <th><br></th>
+                            <th><br></th>
+                            <th><br></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;1</td>
+                            <td onclick="myFunction('math1')">&nbsp;Math 1</td>
+                            <td onclick="myFunction('prog1')">&nbsp;Programming 1</td>
+                            <td onclick="myFunction('psy')">&nbsp;(Psychology)G<span style="font-style: normal; font-weight: 400;">eneral Psychology 1*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;2</td>
+                            <td onclick="myFunction('math2')">&nbsp;Math 2&nbsp;</td>
+                            <td onclick="myFunction('prog2')"><span style="font-style: normal; font-weight: 400;">Programming 2</span><br></td>
+                            <td onclick="myFunction('mess')"><span
+                                    style="font-style: normal; font-weight: 400;">(Systems engineering)</span><br><span
+                                    style="font-style: normal; font-weight: 400;">Measuring techniques and sensors*</span><br>
+                            </td>
+                            <td onclick="myFunction('space')">Space informatics&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>3&nbsp;</td>
+                            <td onclick="myFunction('math3')"><span style="font-style: normal; font-weight: 400;">Math 3*&nbsp;</span><br></td>
+                            <td onclick="myFunction('algodat')"><span style="font-style: normal; font-weight: 400;">Algorithm and</span><br><span
+                                    style="font-style: normal; font-weight: 400;">Datastructures</span><br></td>
+                            <td onclick="myFunction('ti')"><span
+                                    style="font-style: normal; font-weight: 400;">Theoretical informatics*&nbsp;</span>&nbsp;
+                            </td>
+                            <td  onclick="myFunction('elem')">Elements of Machine learning</td>
+                        </tr>
+                        <tr>
+                            <td>4&nbsp;</td>
+                            <td onclick="myFunction('tada')">Topics in Algorithmic Data Analysis</td>
+                            <td onclick="myFunction('stats')">Statistics Lab&nbsp;</td>
+                            <td onclick="myFunction('hlcv')">High-Level Computer Vision&nbsp;</td>
+                            <td onclick="myFunction('seminar')">Seminar - Debiasing Clinical Speech&nbsp;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <span>*: did not write the exam due to time constraints, I still have learned the content</span>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="information_texts" >
+                <p id="content_pusher">
+                    Click on a course to get details
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- BODY END -->
+</body>
+</html>
