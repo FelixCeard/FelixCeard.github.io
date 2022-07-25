@@ -242,6 +242,12 @@ header {
 
 }
 
+#CV {
+    background: #457b9d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #f0f0f0;
+}
 .project img {
     max-height: 150px;
     max-width: 150px;

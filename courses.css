@@ -440,6 +440,12 @@ table th {
 table td:hover {
     background: rgba(246, 189, 96, 0.4);
 }
+#CV {
+    background: #457b9d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #f0f0f0;
+}
 
 table td {
     border: 1px solid #b3adad;

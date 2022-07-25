@@ -392,7 +392,12 @@ header {
     cursor: pointer;
 
 }
-
+#CV {
+    background: #457b9d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #f0f0f0;
+}
 .link_text {
     text-decoration: none;
     color: inherit;
