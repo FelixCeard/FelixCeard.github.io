@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <!--    <script src="courses.js">-->
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,500&display=swap"-->
+    <!--          rel="stylesheet">-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+
+<!-- BODY START -->
+<div id="main_page">
+    <header>
+        <div id="title_logo">
+            <span class="title_text">
+                <a href="index.html" class="link_text">Felix CF</a>
+            </span>
+        </div>
+        <div class="header_texts_container">
+            <a href="me.html">
+                <span class="link_header title_text">About me</span>
+            </a>
+            <a href="projects.html">
+                <span class="link_header title_text">Projects</span>
+            </a>
+            <a href="contact.html">
+                <span class="link_header title_text">Contact</span>
+            </a>
+            <a href="CV.pdf" target="_blank">
+                <span class="link_header title_text" id="CV">CV</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="first_section">
+
+        <div class="left">
+
+            <div class="same_size_welcome">
+                <span class="hi">Hi, I'm</span>
+                <span class="name">Felix Ceard-Falkenberg</span>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="same_size_images">
+                <div class="picture-of-me">
+                    <img src="../images/photo_me.jpg" class="image_of_me">
+                </div>
+                <div class="companies">
+                    <a style="text-decoration: none" href="https://www.uni-saarland.de/start.html" target="_blank">
+                        <img class="logo" src="../images/Logo-Universität_des_Saarlandes.svg.png">
+                    </a>
+                    <a style="text-decoration: none" href="https://iml.dfki.de/people/" target="_blank">
+                        <img class="logo" src="../images/1200px-DFKI_Logo.svg.png">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--    <div class="hline"></div>-->
+
+    <div class="second_section">
+
+        <span class="section_title">About me</span>
+
+        <div class="paragraph_container">
+            <p class="paragraph_about_me">
+                I am currently a student at the Saarland University studying computer science with a strong focus on
+                <a href="https://www.uni-saarland.de/studium/angebot/bachelor/datascienceartificialintelligence.html">artificial
+                    intelligence and data science</a>.
+                <br><br>
+                I am also currently working as a research assistant at the German
+                Research Center for Artificial Intelligence (DFKI) in the Interactive Machine Learning (IML) department.
+                <br>
+                <br>
+                Besides computer science, I have several other interests, such as music.
+            </p>
+            <br>
+            <a href="me.html" class="button_a">
+                <button class="more_about_me">More me</button>
+            </a>
+        </div>
+    </div>
+
+    <!--    <div class="hline"></div>-->
+
+    <hr>
+
+    <div class="third_section">
+        <span class="section_title">Projects</span>
+
+        <!--        <div class="paragraph_container_no_border">-->
+        <!--            <p class="paragraph_about_me">-->
+        <!--                Here are some of my most important projects, you can find a detailed version here: <a href="projects.html">projects</a>.-->
+        <!--            </p>-->
+        <!--        </div>-->
+
+        <div class="projects">
+
+
+            <div class="project">
+                <img src="../images/ebmaj7.png">
+                <div>
+                    <span>Programming language</span>
+
+                    <p>
+                        Eb-maj7 is my own esoteric programming language.
+                        <br>
+                        <br>
+                        The goal of this programming language was to be able to write functional code that would
+                        generate music during execution.
+<!--                        I created my own esoteric programming language called Eb-maj7.<br>-->
+<!--                        The goal of this programming language was to be able to write functional code and during the-->
+<!--                        execution, music would have been created.-->
+                        <!--                        <br>-->
+                        <!--                        More information can be found here: <a href="projects.html#ebmaj7">Eb-maj7</a>.-->
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../images/nn.png">
+                <div>
+                    <span>Neural Network framework</span>
+
+                    <p>
+                        After being introduced to functional programming languages in programming 1, I have challenged
+                        myself to write a (small) framework for the training of neural networks.
+                        <br>
+                        This meant implementing gradient descent from scratch.
+                        <!--                        <br>-->
+                        <!--                        More information can be found here: <a href="projects.html#ebmaj7">SML-AI</a>.-->
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../images/transform.png">
+                <div>
+                    <span>Transformer</span>
+
+                    <p>
+                        For the course <a href="https://cms.sic.saarland/hlcvss22/">High Level Computer Vision</a>, I am
+                        doing a project involving training a large transformer from scratch. The model I am training has
+                        27 million parameter.
+                        <br>
+                        The goal of this transformer is to be able to recreate pictures of objects solely on their
+                        sketches.
+                        <br>
+                        As it is work in progress, not a lot can be published yet.
+                        <!--                        <br>-->
+                        <!--                        More information can be found here: <a href="projects.html#hlcv22">Transformer</a>.-->
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="more">
+                <a href="projects.html" class="button_a">
+                    <button class="more_about_me">More Projects</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--    <div class="hline"></div>-->
+
+    <hr>
+
+    <div class="publications">
+        <span class="section_title">Publications</span>
+
+        <div class="publication_container">
+            <ul>
+                <li>
+                    <p class="publications_text">
+                        <b>Title</b>: pEncode: A Tool for Visualizing Pen Signal Encodings in Real-time<br>
+                        <b>Authors</b>: Felix Céard-Falkenberg, Konstantin Kuznetsov, Alexander Prange, Michael Barz,
+                        and
+                        Daniel
+                        Sonntag<br>
+                        <b>Conference</b>: <a href="https://www.hhai-conference.org/">Hybrid Human Artificial
+                        Intelligence</a><br>
+                        <b>Date</b>: 2022<br>
+                        <b>Type</b>: Demo<br>
+                        <b>DOI</b> <a href="http://dx.doi.org/10.3233/FAIA220217" target="_blank">http://dx.doi.org/10.3233/FAIA220217<\a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--    <div class="hline"></div>-->
+
+    <hr>
+
+    <div class="and_more">
+        <span class="section_title">And the rest...</span>
+
+        <div class="all_the_things">
+            <div class="flex_container">
+                <a href="CV.pdf" target="_blank">
+                    <button class="button_rest">CV</button>
+                </a>
+                <a href="https://github.com/FelixCeard">
+                    <button class="button_rest"><img class="img_as_icon" src="../images/github.png"></button>
+                </a>
+                <a href="courses.html">
+                    <button class="button_rest">Course taken</button>
+                </a>
+                <a href="projects.html">
+                    <button class="button_rest">Projects</button>
+                </a>
+                <a href="me.html">
+                    <button class="button_rest">About me</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- BODY END -->
+</body>
+</html>
